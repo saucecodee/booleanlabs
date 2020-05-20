@@ -111,7 +111,7 @@ header nav a {
 
 
 
-#landing{
+#landing-sect{
      display: flex;
      align-items: center;
      padding: 6rem 0;
@@ -139,7 +139,7 @@ header nav a {
 
 
 
-#what-w-d{
+#what-w-d-sect{
      background-color: #fbfcff;
      padding: 6rem 0;
 }
@@ -173,6 +173,45 @@ header nav a {
      margin-bottom: 1rem;
 }
 
+
+
+
+
+#about-sect{
+     padding: 6rem 0;
+}
+
+.about-sect{
+     display: grid;
+     grid-template-columns: 1.5fr 1fr;
+     grid-gap: 6rem;
+     align-items: center;
+}
+
+.about-left{
+     min-width: 60%;
+}
+
+.about-left h1{
+     margin-bottom: 2rem;
+}
+
+.about-left p{
+     margin-bottom: 1rem;
+}
+
+
+.about-rigth{
+     justify-items: flex-end;
+     max-width: 100%;
+     border-radius: 0.5rem;
+}
+
+
+
+
+
+#
 
 /* @media screen and (min-width: 320px) {
      html {
