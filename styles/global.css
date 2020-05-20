@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+     --color1: #545bdc;
+     --color2: #252525;
+     --dark: #141519;
+     --white: #ffffff;
+     --text: #454545;
+     --black-l: #dfdfdf;
+
+     /* Fonts */
+     --Font1: "Roboto", sans-serif;
+     --Font2: "Noto Serif", serif;
+
+     font-size: 16px;
+     color: var(--text);
+
+     --container-width: 1024px;
+     --device-lg: 300px;
+     --device-md: 760px;
+     --device-sm: 600px;
+
+     --header-height: 85px;
+     --footer-height: 100px;
+}
+
+* {
+     border: 0;
+     margin: 0;
+     padding: 0;
+     outline: none;
+     font-family: var(--Font1);
+     box-sizing: border-box;
+}
+
+.container {
+     width: var(--container-width);
+     margin: 0 auto;
+}
+
+button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 0.3em;
+     padding: 0.75em 1.5em;
+     font-weight: 600;
+     cursor: pointer;
+     letter-spacing: 1px;
+}
+
+button svg {
+     margin-left: 0.5em;
+}
+
+button.color2 {
+     background: transparent;
+     color: var(--color1);
+}
+
+button.color2 {
+     background: var(--color1);
+     color: var(--white);
+     stroke: var(--white);
+}
+
+
+
+section.head {
+     text-align: center;
+}
+
+section.dark {
+     color: var(--white);
+     background-color: var(--dark);
+     padding: 3rem 0;
+}
+
+section.dark .section-desc {
+     font-size: 0.87rem;
+     width: 70%;
+     margin: 0 auto;
+     margin-top: 1.5rem;
+}
+
+
+
+
+
+
+/* @media screen and (min-width: 320px) {
+     html {
+          font-size: calc(16px + 8 * ((100vw - 320px) / 680));
+     }
+}
+@media screen and (min-width: 1000px) {
+     html {
+          font-size: 18px;
+     }
+} */
