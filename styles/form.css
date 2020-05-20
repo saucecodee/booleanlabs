@@ -1,0 +1,28 @@
+.form-control {
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 1rem;
+}
+
+.form-control p {
+     font-size: 12px;
+}
+
+.form-control input,
+.form-control textarea,
+.form-control select {
+     width: 100%;
+     padding: 0.75rem 1em;
+     border: 1px solid #cccccc;
+     border-radius: 0.3rem;
+     box-sizing: border-box;
+}
+
+.form-control input::placeholder {
+     color: #a0a0a0;
+}
+
+.form-control label {
+     font-size: 0.87rem;
+     margin-bottom: 0.5rem;
+}
