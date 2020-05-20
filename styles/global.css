@@ -201,7 +201,7 @@ header nav a {
 }
 
 
-.about-rigth{
+.about-right{
      justify-items: flex-end;
      max-width: 100%;
      border-radius: 0.5rem;
@@ -211,7 +211,20 @@ header nav a {
 
 
 
-#
+#partners{
+     padding: 6rem 0;
+}
+
+.partners{
+     display: grid;
+     grid-template-columns: repeat(4, minmax(0, 1fr));
+     grid-gap: 6rem;
+     align-items: center;
+}
+
+.partners img{
+     max-width: 100%;
+}
 
 /* @media screen and (min-width: 320px) {
      html {
