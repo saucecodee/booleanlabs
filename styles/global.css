@@ -35,6 +35,10 @@
      box-sizing: border-box;
 }
 
+body {
+     position: relative;
+}
+
 .container {
      width: var(--container-width);
      margin: 0 auto;
@@ -67,7 +71,7 @@ section.dark .section-desc {
           --container-width: 100%;
      }
 
-     .container{
+     .container {
           padding: 0 1rem;
      }
 
@@ -75,7 +79,6 @@ section.dark .section-desc {
           width: 100%;
      }
 }
-
 
 /*****************************************************/
 /*   Header                                         */
@@ -98,10 +101,47 @@ header nav a {
      margin-left: 2rem;
 }
 
-@media only screen and (max-width: 600px) {
-    
+.menu-btn {
+     display: none;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 35px;
+     height: 25px;
 }
 
+.menu-btn div {
+     display: block;
+     background-color: black;
+     height: 3px;
+     width: 100%;
+     margin: 1px 0;
+     border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+     .menu-btn {
+          display: flex;
+     }
+
+     header nav {
+          background-color: white;
+          /* display: none; */
+          position: fixed;
+          /* top: var(--header-height); */
+          /* height: calc(100vh - var(--header-height)); */
+          top: 100vh;
+          left: 0;
+          height: 50vh;
+          width: 100vw;
+          transition: 0.3s ease-in-out;
+          z-index: 200;
+     }
+
+     header .mobile nav {
+          /* display: block; */
+          top: 50vh;
+     }
+}
 
 /*****************************************************/
 /*   Landing                                         */
@@ -138,11 +178,10 @@ header nav a {
           align-items: center;
      }
 
-     .landing-right{
+     .landing-right {
           width: 100%;
      }
 }
-
 
 /*****************************************************/
 /*   What we do                                      */
@@ -189,7 +228,6 @@ header nav a {
      }
 }
 
-
 /*****************************************************/
 /*   About                                         */
 /*****************************************************/
@@ -229,7 +267,6 @@ header nav a {
      }
 }
 
-
 /*****************************************************/
 /*   Partners                                        */
 /*****************************************************/
@@ -255,7 +292,6 @@ header nav a {
           grid-gap: 2rem;
      }
 }
-
 
 /*****************************************************/
 /*   Contact us                                         */
@@ -319,10 +355,8 @@ header nav a {
           top: 1rem;
           right: 1rem;
           left: 1rem;
-          
      }
 }
-
 
 /*****************************************************/
 /*   Footer                                         */
@@ -341,7 +375,6 @@ footer .footer {
      justify-content: space-between;
 }
 
-
 /* @media screen and (min-width: 320px) {
      html {
           font-size: calc(16px + 8 * ((100vw - 320px) / 680));
@@ -352,4 +385,3 @@ footer .footer {
           font-size: 18px;
      }
 } */
-
