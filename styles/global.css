@@ -62,6 +62,25 @@ section.dark .section-desc {
      margin-top: 1.5rem;
 }
 
+@media screen and (max-width: 600px) {
+     :root {
+          --container-width: 100%;
+     }
+
+     .container{
+          padding: 0 1rem;
+     }
+
+     section.dark .section-desc {
+          width: 100%;
+     }
+}
+
+
+/*****************************************************/
+/*   Header                                         */
+/*****************************************************/
+
 header {
      display: flex;
      align-items: center;
@@ -78,6 +97,15 @@ header .header {
 header nav a {
      margin-left: 2rem;
 }
+
+@media only screen and (max-width: 600px) {
+    
+}
+
+
+/*****************************************************/
+/*   Landing                                         */
+/*****************************************************/
 
 #landing-sect {
      display: flex;
@@ -103,6 +131,22 @@ header nav a {
 .landing-left a {
      margin-top: 3rem;
 }
+
+@media only screen and (max-width: 600px) {
+     .landing {
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .landing-right{
+          width: 100%;
+     }
+}
+
+
+/*****************************************************/
+/*   What we do                                      */
+/*****************************************************/
 
 #what-w-d-sect {
      background-color: #fbfcff;
@@ -137,6 +181,19 @@ header nav a {
      margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+     .what-we-do {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-gap: 3rem;
+     }
+}
+
+
+/*****************************************************/
+/*   About                                         */
+/*****************************************************/
+
 #about-sect {
      padding: 6rem 0;
 }
@@ -166,6 +223,17 @@ header nav a {
      border-radius: 0.5rem;
 }
 
+@media only screen and (max-width: 600px) {
+     .about-sect {
+          grid-template-columns: 1fr;
+     }
+}
+
+
+/*****************************************************/
+/*   Partners                                        */
+/*****************************************************/
+
 #partners {
      padding: 6rem 0 8rem;
 }
@@ -181,6 +249,18 @@ header nav a {
      max-width: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+     .partners {
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 2rem;
+     }
+}
+
+
+/*****************************************************/
+/*   Contact us                                         */
+/*****************************************************/
+
 #contact-us {
      position: relative;
      background: url("../img/map.PNG") no-repeat;
@@ -189,7 +269,7 @@ header nav a {
      height: 600px;
 }
 
-.contact-us{
+.contact-us {
      display: flex;
      align-items: center;
      position: relative;
@@ -197,7 +277,7 @@ header nav a {
      height: 100%;
 }
 
-#contact-us::before{
+#contact-us::before {
      position: absolute;
      background-color: rgba(27, 27, 27, 0.5);
      content: "";
@@ -207,11 +287,11 @@ header nav a {
      height: 100%;
 }
 
-.contact-us .address{
+.contact-us .address {
      color: var(--white);
 }
 
-.contact-us .address .label{
+.contact-us .address .label {
      display: inline-block;
      background-color: var(--color1);
      color: var(--white);
@@ -219,7 +299,7 @@ header nav a {
      padding: 0.75rem 1rem;
 }
 
-#contact-us form{
+#contact-us form {
      position: absolute;
      background-color: white;
      top: -10px;
@@ -229,16 +309,29 @@ header nav a {
      border-radius: 0.5rem;
 }
 
-#contact-us form h2{
+#contact-us form h2 {
      color: var(--color1);
      margin-bottom: 2rem;
-} 
+}
+
+@media only screen and (max-width: 600px) {
+     #contact-us form {
+          top: 1rem;
+          right: 1rem;
+          left: 1rem;
+          
+     }
+}
+
+
+/*****************************************************/
+/*   Footer                                         */
+/*****************************************************/
 
 footer {
      height: var(--footer-height);
      display: flex;
      align-items: center;
-     height: var(--header-height);
      box-shadow: 0 3px 10px rgba(137, 137, 137, 0.2);
 }
 
@@ -247,6 +340,7 @@ footer .footer {
      align-items: center;
      justify-content: space-between;
 }
+
 
 /* @media screen and (min-width: 320px) {
      html {
@@ -258,3 +352,4 @@ footer .footer {
           font-size: 18px;
      }
 } */
+
